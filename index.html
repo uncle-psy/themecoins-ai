@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#070a19">
+  <meta name="description" content="Explore Solana as protocol, economy, institutional field, media ecology, builder scene, and contested public story.">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="The Solana System">
+  <meta property="og:title" content="The Solana System">
+  <meta property="og:description" content="A living map of Solana's speed, capital, culture, and repair.">
+  <meta property="og:url" content="https://themecoins.ai/">
+  <meta property="og:image" content="https://themecoins.ai/assets/cards/horizontal/1024.webp">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://themecoins.ai/">
+  <link rel="icon" href="../assets/system/coin/512.webp">
+  <title>The Solana System</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="topbar">
+    <button class="brand" data-view="home" aria-label="The Solana System home"><span class="brand-mark"></span><span>The Solana System</span></button>
+    <nav id="nav" aria-label="System views">
+      <button data-view="nodes" class="active">Atlas</button><button data-view="graph">Graph</button><button data-view="structures">Structures</button><button data-view="mtndao">mtnDAO</button><button data-view="mapshifts">Mapshifts</button><button data-view="readings">Readings</button><button data-view="games">Games</button><button data-view="curriculum">Curriculum</button><button data-view="evidence">Evidence</button>
+    </nav>
+    <button id="menu" aria-label="Toggle navigation" aria-expanded="false">Menu</button>
+  </header>
+  <div class="statusline"><span class="pulse"></span><strong>Living release v1.0.0</strong><span>Research cutoff: Aug 27, 2026</span><span class="pending">mtnDAO X Demo Day: scheduled Aug 28 · pending</span></div>
+  <main id="main" tabindex="-1">
+    <section id="hero" class="hero">
+      <div class="hero-copy"><p class="eyebrow">system:kiduna:solana</p><h1>A living map of speed, capital, culture & repair.</h1><p>Explore Solana as protocol, economy, institutional field, media ecology, builder scene, and contested public story—without losing dates, mechanisms, sources, or uncertainty.</p><div class="hero-actions"><button data-view="nodes" class="primary">Enter the atlas</button><button data-view="graph">Open the graph</button></div><dl class="metrics" id="metrics"></dl></div>
+      <img src="../assets/cards/vertical/1024.webp" alt="Illustrated Solana System card showing a clock passing through a mountain portal into a network city">
+    </section>
+
+    <section id="nodes" class="view active" aria-labelledby="nodes-title">
+      <div class="viewhead"><div><p class="eyebrow">Node atlas</p><h2 id="nodes-title">Mechanisms before slogans</h2></div><p id="resultCount" aria-live="polite"></p></div>
+      <div class="workspace"><aside class="filters" aria-label="Atlas filters"><label>Search<input id="search" type="search" placeholder="Protocol, person, event…"></label><label>Constellation<select id="constellation"><option value="">All constellations</option></select></label><label>Kind<select id="kind"><option value="">All kinds</option></select></label><label>Status<select id="status"><option value="">All statuses</option></select></label><label>Obscurity<select id="obscurity"><option value="">Any obscurity</option><option value="0">Known (0–1)</option><option value="2">Deep cut (2–3)</option><option value="4">Obscure (4–5)</option></select></label><button id="clear">Clear filters</button><div class="filter-note">First-party metrics stay participant statements. “Current” means current at the release cutoff.</div></aside><div id="nodeGrid" class="node-grid"></div></div>
+    </section>
+
+    <section id="graph" class="view" aria-labelledby="graph-title"><div class="viewhead"><div><p class="eyebrow">Typed relations</p><h2 id="graph-title">The living graph</h2></div><div class="graph-controls"><label>Focus<select id="graphFocus"></select></label><button id="graphReset">Reset view</button></div></div><p class="lede">Edges name mechanisms—routes orders into, funds operation of, exposes failure modes in—not generic association. Select a node to focus its neighborhood.</p><div id="graphCanvas" class="graph-canvas" role="img" aria-label="Interactive graph of Solana System nodes and typed edges"></div><div id="graphLegend" class="legend"></div></section>
+
+    <section id="structures" class="view" aria-labelledby="structures-title"><div class="viewhead"><div><p class="eyebrow">Loops · Forces · polarities · special maps</p><h2 id="structures-title">Read the structures beneath the directory</h2></div></div><p class="lede">These views expose recurrent dynamics and tensions without turning Solana into one score or one story.</p><div id="specialMapGrid" class="instrument-grid structure-grid"></div><h3 class="section-title">Seven recurrent loops</h3><div id="loopGrid" class="instrument-grid"></div><h3 class="section-title">Thirty-one polarity maps</h3><div id="polarityGrid" class="polarity-grid"></div><h3 class="section-title">Sixty-seven required Forces</h3><div id="forceGrid" class="chips force-grid"></div></section>
+
+    <section id="mtndao" class="view" aria-labelledby="mtn-title"><div class="mtn-hero"><img src="../assets/masters/mtndao.png" alt="Text-free builder residency diorama in a winter mountain city"><div><p class="eyebrow">Contained System</p><h2 id="mtn-title">mtnDAO: dense co-presence as infrastructure</h2><p>A recurring month-long builder residency becomes ten dated Realm bindings. The stable pattern—office, meals, building, side rituals, demos, slopes, return visits—never erases edition-specific evidence.</p><div class="notice"><strong>Cutoff rule:</strong> mtnDAO X is underway. Its August 28, 2026 Demo Day lies one day beyond this release and has no invented outcomes.</div></div></div><div id="mtnTimeline" class="timeline"></div><div class="two-col"><div><h3>v9 Demo Index</h3><p class="muted">Inclusion reflects a participant field report, not endorsement, survival, or investment.</p><div id="mtnProjects" class="chips"></div></div><div><h3>Activity & Ritual Index</h3><div id="mtnActivities" class="chips warm"></div></div></div></section>
+
+    <section id="mapshifts" class="view" aria-labelledby="map-title"><div class="viewhead"><div><p class="eyebrow">52 reframings</p><h2 id="map-title">Change the map, then test it</h2></div><button id="randomShift">Draw another Mapshift</button></div><div id="mapshiftStage" class="mapshift-stage"></div><div id="mapshiftList" class="compact-list"></div></section>
+    <section id="readings" class="view" aria-labelledby="read-title"><div class="viewhead"><div><p class="eyebrow">15 structured traversals</p><h2 id="read-title">Readings without prediction theater</h2></div></div><p class="lede">Every spread moves from observation through mechanism and countermap to a bounded choice and review date.</p><div id="readingGrid" class="instrument-grid"></div></section>
+    <section id="games" class="view" aria-labelledby="game-title"><div class="viewhead"><div><p class="eyebrow">8 substantial games</p><h2 id="game-title">Rehearse the system safely</h2></div></div><p class="lede">These games teach real mechanisms without rewarding market manipulation, real wallet signing, harassment, or financial risk.</p><div id="gameGrid" class="instrument-grid games"></div></section>
+    <section id="curriculum" class="view" aria-labelledby="cur-title"><div class="viewhead"><div><p class="eyebrow">16-module curriculum</p><h2 id="cur-title">From boundary to living maintenance</h2></div></div><div id="lessonGrid" class="lessons"></div></section>
+    <section id="evidence" class="view" aria-labelledby="evidence-title"><div class="viewhead"><div><p class="eyebrow">Source & claim ledger</p><h2 id="evidence-title">Trust the trail, not the finish</h2></div></div><div class="claim-policy"><article><b>Empirical</b><span>Code, protocol documents, court records, operational data.</span></article><article><b>Participant statement</b><span>Official marketing, founder accounts, roadmaps, X posts.</span></article><article><b>Cultural-historical</b><span>Dated events reconstructed with role-aware sources.</span></article><article><b>Interpretive</b><span>Media and social theory used as a lens, not proof.</span></article><article><b>Open question</b><span>Unresolved identities, missing evidence, pending events.</span></article></div><label class="source-search">Search sources<input id="sourceSearch" type="search" placeholder="mtnDAO, status, court, Fusion…"></label><div id="sourceList" class="source-list"></div></section>
+  </main>
+
+  <dialog id="nodeDialog"><button class="close" aria-label="Close node detail">×</button><div id="nodeDetail"></div></dialog>
+  <footer><img src="../assets/system/coin/512.webp" alt=""><div><strong>The Solana System v1.0.0</strong><p>Graph-native · versioned · source-aware · research cutoff 2026-08-27</p></div><a href="../README.md">Release README</a></footer>
+  <script src="data.js"></script><script src="app.js"></script>
+</body>
+</html>
